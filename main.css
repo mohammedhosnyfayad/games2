@@ -1056,6 +1056,24 @@ html {
   .box-plans .plan .futs .fut-1 {
     font-size: 15px;
   }
+  .box-plans .plan button {
+    padding: 10px 40px;
+  }
+  .box-plans .plan .btn2 button {
+    padding: 10px 17px;
+    width: fit-content;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1280px) {
+  .box-plans .plan button {
+    padding: 10px 40px;
+  }
+  .box-plans .plan .btn2 button {
+    padding: 10px 30px;
+    width: fit-content;
+    margin-bottom: 0;
+  }
 }
 #buy2 {
   font-size: 15px;
