@@ -1183,6 +1183,7 @@ select {
 }
 .input {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -1232,6 +1233,10 @@ select {
   color: white;
   cursor: pointer;
 }
+.new {
+  flex-direction: column;
+}
+
 .method-text {
   display: flex;
   align-items: center;
@@ -1255,11 +1260,50 @@ select {
   font-size: 30px;
   transform: translate(-50%, -50%);
 }
+@media (min-width: 200px) and (max-width: 912px) {
+  .page-buy-payment {
+    padding: 50px 0 0 0;
+  }
+  .big-inputs {
+    flex-direction: column;
+  }
+  .addcards .inputs {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+  }
+  .addcards .inputs {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cvv {
+    width: 300px !important;
+  }
+  .box-buy h2 {
+    font-size: 18px;
+  }
+  .addcards h1 {
+    font-size: 20px;
+  }
+  .close {
+    left: 15px;
+  }
+}
 .two-new {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .two-new {
+    padding: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .addcards input {
+    width: 250px;
+  }
 }
 .text-card p:last-child {
   margin-top: 50px;
