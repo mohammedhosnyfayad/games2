@@ -356,62 +356,62 @@ buy2.addEventListener("click", function () {
   }
 });
 
-// let cardImg = document.querySelectorAll(".card-img img");
-// let input = document.querySelector(".input");
-// let methodtext = document.querySelector(".method-text");
-// let newDIV = document.querySelector(".new");
-// let paypal = document.getElementById("pay-pal");
-// let methodtextid = document.getElementById("method-text-id");
-// let mastercard = document.getElementById("mastercard");
-// let visa = document.getElementById("visa");
-// newDIV.style.display = "none";
+let cardImg = document.querySelectorAll(".card-img img");
+let input = document.querySelector(".input");
+let methodtext = document.querySelector(".method-text");
+let newDIV = document.querySelector(".new");
+let paypal = document.getElementById("pay-pal");
+let methodtextid = document.getElementById("method-text-id");
+let mastercard = document.getElementById("mastercard");
+let visa = document.getElementById("visa");
+newDIV.style.display = "none";
 
-// cardImg.forEach(function (img) {
-//   img.addEventListener("click", function () {
-//     cardImg.forEach(function (item) {
-//       item.classList.remove("border");
-//     });
-//     img.classList.add("border");
-//     methodtextid.src = img.src;
-//     if (paypal.className.includes("border")) {
-//       newDIV.style.display = "block";
-//       input.style.display = "none";
-//     } else if (mastercard.className.includes("border")) {
-//       input.style.display = "block";
-//       newDIV.style.display = "none";
-//     } else if (visa.className.includes("border")) {
-//       input.style.display = "block";
-//       newDIV.style.display = "none";
-//     }
-//   });
-// });
+cardImg.forEach(function (img) {
+  img.addEventListener("click", function () {
+    cardImg.forEach(function (item) {
+      item.classList.remove("border");
+    });
+    img.classList.add("border");
+    methodtextid.src = img.src;
+    if (paypal.className.includes("border")) {
+      newDIV.style.display = "flex";
+      input.style.display = "none";
+    } else if (mastercard.className.includes("border")) {
+      input.style.display = "flex";
+      newDIV.style.display = "none";
+    } else if (visa.className.includes("border")) {
+      input.style.display = "flex";
+      newDIV.style.display = "none";
+    }
+  });
+});
 
-// let closePage = document.querySelector(".close");
-// let pagepayment = document.querySelector(".page-buy-payment");
-// let planname = document.getElementById("plan-name");
+let closePage = document.querySelector(".close");
+let pagepayment = document.querySelector(".page-buy-payment");
+let planname = document.getElementById("plan-name");
 
-// let pagaBuy = document.querySelectorAll(".page-buy");
-// pagepayment.style.display = "none";
-// let statfive = true;
-// pagaBuy.forEach(function (b) {
-//   b.addEventListener("click", function (e) {
-//     pagepayment.style.display = "block";
-//     input.style.display = "none";
-//     const h1Text = b.closest(".plan").querySelector(".name-plan").textContent;
-//     planname.textContent = `اسم الباقه ${h1Text}`;
-//     window.scrollTo({
-//       top: 6129,
-//       behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
-//     });
-//   });
-// });
-// closePage.onclick = function () {
-//   pagepayment.style.display = "none";
-//   window.scrollTo({
-//     top: 5225,
-//     behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
-//   });
-// };
+let pagaBuy = document.querySelectorAll(".page-buy");
+pagepayment.style.display = "none";
+let statfive = true;
+pagaBuy.forEach(function (b) {
+  b.addEventListener("click", function (e) {
+    pagepayment.style.display = "block";
+    input.style.display = "none";
+    const h1Text = b.closest(".plan").querySelector(".name-plan").textContent;
+    planname.textContent = `اسم الباقه ${h1Text}`;
+    window.scrollTo({
+      top: 6129,
+      behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
+    });
+  });
+});
+closePage.onclick = function () {
+  pagepayment.style.display = "none";
+  window.scrollTo({
+    top: 5225,
+    behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
+  });
+};
 // let imgstop = document.querySelector(".img-stop");
 // let pris = document.querySelector(".pris");
 
